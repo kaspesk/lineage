@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
+repo init --depth=1 -u https://github.com/crdroid-security/android.git -b 11.0 --git-lfs
 
 echo "=================="
 echo "Repo init success"
@@ -22,7 +22,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=Katakishi
+export BUILD_USERNAME=kaspesk
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
