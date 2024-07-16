@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11 --git-lfs
+repo init --depth=1 -u https://github.com/Project-Kizashi/android.gi -b relay --git-lfs
 
 echo "=================="
 echo "Repo init success"
@@ -31,8 +31,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_channel-ap2-userdebug
+lunch lunch kasumi_channel-userdebug
 echo "============="
 
 # Build rom
-mka bacon
+mka bandori
