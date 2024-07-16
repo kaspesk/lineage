@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/Project-Kizashi/android.gi -b relay --git-lfs
+repo init --depth=1 -u https://github.com/Project-Kizashi/android.git -b relay --git-lfs
 
 echo "=================="
 echo "Repo init success"
