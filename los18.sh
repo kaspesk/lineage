@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/crdroid-security/android.git -b 11.0 --git-lfs
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11 --git-lfs
 
 echo "=================="
 echo "Repo init success"
