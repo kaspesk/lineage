@@ -10,7 +10,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/kaspesk/local_manifests --depth 1 -b 11.0 .repo/local_manifests
+git clone https://github.com/kaspesk/local_manifests --depth 1 -b kizashi .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
