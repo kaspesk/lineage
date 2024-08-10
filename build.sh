@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectMatrixx/android.git -b 13.0 --git-lfs
+repo init --depth=1 -u https://github.com/LineageOS/android -b lineage-18.1
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/kaspesk/local_manifests --depth 1 -b 13.0 .repo/local_manifests
+git clone https://github.com/katakishi0/local_manifest -b main .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=Kaspesk
+export BUILD_USERNAME=kaspesk
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -30,7 +30,10 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_channel-qpr3-userdebug
+lunch blaze_channel-ap2a-userdebug
+echo "============="
+# Make cleaninstall
+make installclean
 echo "============="
 
 # Build rom
