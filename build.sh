@@ -30,7 +30,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_channel-ap2a-userdebug
+lunch lineage_channel-userdebug
 echo "============="
 # Make cleaninstall
 make installclean
